@@ -17,7 +17,9 @@ end
 
 
 def consolidate_cart(cart)
-  
+  final_cart = {}
+  final_cart.each < cart.length 
+    fail_cart += 
   binding.pry
   # Consult README for inputs and outputs
   #
