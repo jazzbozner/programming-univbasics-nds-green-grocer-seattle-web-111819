@@ -18,13 +18,14 @@ end
 
 def consolidate_cart(cart)
   final_cart = {}
-  final_cart.each < cart.length 
-    fail_cart += 
+  cart.each do |element_hash|
+    element_hash +=
   binding.pry
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
+  end
 end
 
 def apply_coupons(cart, coupons)
