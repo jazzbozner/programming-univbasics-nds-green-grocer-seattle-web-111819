@@ -21,7 +21,7 @@ def consolidate_cart(cart)
   final_array = []
   i = 0
   while i < cart.length do
-    element_item = element_hash.keys[]
+    element_item = cart[i][:item]
      binding.pry
     
     # if final_array[element_hash]
