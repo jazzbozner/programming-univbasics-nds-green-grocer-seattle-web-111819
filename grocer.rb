@@ -28,9 +28,9 @@ def consolidate_cart(cart)
     else
       cart[i][:count] = 1
       final_array << cart[i]
-    # binding.pry
   end
   i += 1
+    binding.pry
 end
 final_array
 end
