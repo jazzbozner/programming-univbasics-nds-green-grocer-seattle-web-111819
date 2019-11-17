@@ -52,8 +52,9 @@ end
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 def apply_coupons(cart, coupons)
-  coupons.each do |coupon|
-    item = coupon[:item]
+  coupons.each do |coupons|
+    item = coupons[:item]
+    if cart[:item] && coupons[:item][:count] >=coupon[:num]
   binding.pry
   
 end
