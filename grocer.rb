@@ -35,11 +35,6 @@ end
 final_array
 end
 
-    # if final_array[element_hash]
-    # else
-    
-      
- 
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
