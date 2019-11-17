@@ -46,6 +46,7 @@ end
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 def apply_coupons(cart, coupons)
+  
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
