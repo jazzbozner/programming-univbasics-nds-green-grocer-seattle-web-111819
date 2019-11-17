@@ -27,9 +27,11 @@ def consolidate_cart(cart)
       requested_item[:count] += 1
     else
       cart[i][:count] = 1
-      final_array << 
-     binding.pry
-    
+      final_array << cart[i]
+    # binding.pry
+  end
+end
+
     # if final_array[element_hash]
     # else
     
