@@ -37,55 +37,17 @@ end
 final_array
 end
 
-# def mk_coupon_hash(c)
-#   rounded_unit_price = (c[:cost].to_f * 1.0 / c[:num]).round(2)
-#   {
-#     :item => "#{c[:item]} W/COUPON",
-#     :price => rounded_unit_price,
-#     :count => c[:num]
-#   }
-# end
-
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 def apply_coupons(cart, coupons)
-    coupons.each do |coupon| 
-    coupon.each do |attribute, value| 
-      name = coupon[:item] 
-    
-      if cart[name] && cart[name][:count] >= coupon[:num] 
-        if cart["#{name} W/COUPON"] 
-          cart["#{name} W/COUPON"][:count] += 1 
-        else 
-          cart["#{name} W/COUPON"] = {:price => coupon[:cost], 
-          :clearance => cart[name][:clearance], :count => 1} 
-        end 
-  
-      cart[name][:count] -= coupon[:num] 
-    end 
-  end 
-end 
-  cart 
-end
-  
-#   coupons.each do |coupon|
-#     item = coupon[:item]
-#     if cart[:item] && coupon[:item][:count] >=coupon[:num] && !cart["#{item} W/COUPON"]
-#       cart["#{item} W/COUPON"] = {price: coupon[:cost]/ coupon[:num], clearance: cart[:item[clearance], count: coupon[:num]}
-#       cart[:count] -= coupon[:num]
-#     elsif
-#     coupon[:item][:count] >=coupon[:num] && !cart["#{item} W/COUPON"]
-#       cart["#{item} W/COUPON"]
-#       cart
-#   binding.pry
-# end
 
-#   i = 0
-#   while i < coupons.count do
-#     coupon = coupons[i]
+  
+end
+
+
 #     item_with_coupon = find_item_by_name_in_collection(coupon[:item], cart)
 #     item_is_in_basket = !!item_with_coupon
 #     count_is_big_enough_to_apply = item_is_in_basket && item_with_coupon[:count] >= coupon[:num]
@@ -104,28 +66,12 @@ end
 
 
 def apply_clearance(cart)
-  cart.each do |item, attribute_hash| 
-    if attribute_hash[:clearance] == true 
-      attribute_hash[:price] = (attribute_hash[:price] *
-      0.8).round(2) 
-    end 
-  end 
-cart 
-end
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
+end
 
 def checkout(cart, coupons)
-  total = 0 
-  new_cart = consolidate_cart(cart) 
-  coupon_cart = apply_coupons(new_cart, coupons) 
-  clearance_cart = apply_clearance(coupon_cart) 
-  clearance_cart.each do |item, attribute_hash| 
-    total += (attribute_hash[:price] * attribute_hash[:count])
-  end 
-total = (total * 0.9) if total > 100 total 
-end
   # Consult README for inputs and outputs
   #
   # This method should call
@@ -135,3 +81,4 @@ end
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
+end
