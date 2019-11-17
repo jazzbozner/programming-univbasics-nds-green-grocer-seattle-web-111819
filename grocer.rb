@@ -20,8 +20,7 @@ end
 def consolidate_cart(cart)
   final_array = []
   cart.each do |element_hash|
-    element_item = element_hash[:item]
-    element_price = element_has[:price]
+    element_item = .keys[0]
      binding.pry
     
     # if final_array[element_hash]
