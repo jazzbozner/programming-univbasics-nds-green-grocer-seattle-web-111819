@@ -1,10 +1,8 @@
   require 'pry'
   
 def find_item_by_name_in_collection(name, collection)
-  # pp collection
-  # binding.pry
-  i = 0
-  while i < collection.length do
+  collection.length do |
+  binding.pry
     return collection[i] if name === collection[i][:item]
     i += 1
   end
