@@ -3,7 +3,8 @@
 def find_item_by_name_in_collection(name, collection)
   # pp collection
   # binding.pry
-  collection.length do |i|
+  i = 0
+  while i < collection.length do
     return collection[i] if name === collection[i][:item]
     i += 1
   end
@@ -18,6 +19,7 @@ end
 def consolidate_cart(cart)
   final_cart = {}
   cart.each do |element_hash|
+    element_hash +=
   binding.pry
   # Consult README for inputs and outputs
   #
