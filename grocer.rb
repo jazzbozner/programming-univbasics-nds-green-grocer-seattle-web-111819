@@ -59,7 +59,7 @@ def apply_coupons(cart, coupons)
 
     if item_is_in_basket and count_is_big_enough_to_apply
       apply_coupon_to_cart(item_with_coupon, coupon, cart)
-  binding.pry
+  # binding.pry
     end
     i += 1
   end
