@@ -24,7 +24,7 @@ def consolidate_cart(cart)
     element_item = cart[i][:item]
     requested_item = find_item_by_name_in_collection(element_item, final_array)
     if requested_item 
-      requested_item.has_key?(element_item)
+      requested_item[:count] += 1
     else
       cart[i][:count] = 1
       final_array << cart[i]
