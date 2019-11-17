@@ -30,7 +30,7 @@ def consolidate_cart(cart)
       final_array << cart[i]
   end
   i += 1
-    binding.pry
+    # binding.pry
 end
 final_array
 end
