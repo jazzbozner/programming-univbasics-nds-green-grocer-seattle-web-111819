@@ -35,14 +35,14 @@ end
 final_array
 end
 
-def mk_coupon_hash(c)
-  rounded_unit_price = (c[:cost].to_f * 1.0 / c[:num]).round(2)
-  {
-    :item => "#{c[:item]} W/COUPON",
-    :price => rounded_unit_price,
-    :count => c[:num]
-  }
-end
+# def mk_coupon_hash(c)
+#   rounded_unit_price = (c[:cost].to_f * 1.0 / c[:num]).round(2)
+#   {
+#     :item => "#{c[:item]} W/COUPON",
+#     :price => rounded_unit_price,
+#     :count => c[:num]
+#   }
+# end
 
   # Consult README for inputs and outputs
   #
@@ -50,21 +50,25 @@ end
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 def apply_coupons(cart, coupons)
-  i = 0
-  while i < coupons.count do
-    coupon = coupons[i]
-    item_with_coupon = find_item_by_name_in_collection(coupon[:item], cart)
-    item_is_in_basket = !!item_with_coupon
-    count_is_big_enough_to_apply = item_is_in_basket && item_with_coupon[:count] >= coupon[:num]
+  coupons.each do |coupons|
+    item = coupon[:item]
+    if 
+  binding.pry
+  
+#   i = 0
+#   while i < coupons.count do
+#     coupon = coupons[i]
+#     item_with_coupon = find_item_by_name_in_collection(coupon[:item], cart)
+#     item_is_in_basket = !!item_with_coupon
+#     count_is_big_enough_to_apply = item_is_in_basket && item_with_coupon[:count] >= coupon[:num]
 
-    if item_is_in_basket and count_is_big_enough_to_apply
-      apply_coupon_to_cart(item_with_coupon, coupon, cart)
-  # binding.pry
-    end
-    i += 1
-  end
-  cart
-end
+#     if item_is_in_basket and count_is_big_enough_to_apply
+#       apply_coupon_to_cart(item_with_coupon, coupon, cart)
+#     end
+#     i += 1
+#   end
+#   cart
+# end
 
   # Consult README for inputs and outputs
   #
