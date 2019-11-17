@@ -22,6 +22,7 @@ def consolidate_cart(cart)
   i = 0
   while i < cart.length do
     element_item = cart[i][:item]
+    requested_item = find_item_by_name_in_collection
      binding.pry
     
     # if final_array[element_hash]
