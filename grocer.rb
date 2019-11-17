@@ -20,7 +20,7 @@ end
 def consolidate_cart(cart)
   final_array = []
   cart.each do |element_hash|
-    element_item = .keys[0]
+    element_item = element_hash.keys[0]
      binding.pry
     
     # if final_array[element_hash]
@@ -32,7 +32,7 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-end
+  end
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
