@@ -56,7 +56,7 @@ def apply_coupons(cart, coupons)
     item = coupons[:item]
     if cart[:item] && coupons[:item][:count] >=coupon[:num]
   binding.pry
-  
+end
 end
 
 #   i = 0
