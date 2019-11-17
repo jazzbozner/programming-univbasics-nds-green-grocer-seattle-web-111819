@@ -3,7 +3,7 @@
 def find_item_by_name_in_collection(name, collection)
   # pp collection
 
-  while i < collection.each do |i|
+  collection.each do |i|
     return collection[i] if name === collection[i][:item]
     i += 1
       # binding.pry
