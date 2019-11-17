@@ -18,9 +18,12 @@ end
 
 
 def consolidate_cart(cart)
+  
+  i = 0
+  while i 
   final_array = []
   cart.each do |element_hash|
-    element_item = element_hash.keys[0]
+    element_item = element_hash.keys[]
      binding.pry
     
     # if final_array[element_hash]
