@@ -48,6 +48,7 @@ end
 def apply_coupons(cart, coupons)
   i = 0
   while i < coupons.count do
+  binding.pry
     coupon = coupons[i]
     item_with_coupon = find_item_by_name_in_collection(coupon[:item], cart)
     item_is_in_basket = !!item_with_coupon
@@ -58,7 +59,6 @@ def apply_coupons(cart, coupons)
     end
     i += 1
   end
-  # binding.pry
   cart
 end
   # Consult README for inputs and outputs
