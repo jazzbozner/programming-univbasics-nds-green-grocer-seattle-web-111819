@@ -24,7 +24,7 @@ def consolidate_cart(cart)
     element_item = cart[i][:item]
     requested_item = find_item_by_name_in_collection(element_item, result)
     if requested_item 
-      
+      requested_item[:count] += 1
      binding.pry
     
     # if final_array[element_hash]
