@@ -1,8 +1,10 @@
   require 'pry'
   
 def find_item_by_name_in_collection(name, collection)
-  collection.length do |
-  binding.pry
+  # pp collection
+  # binding.pry
+  i = 0
+  collection.length do |i|
     return collection[i] if name === collection[i][:item]
     i += 1
   end
@@ -17,7 +19,7 @@ end
 def consolidate_cart(cart)
   final_cart = {}
   cart.each do |element_hash|
-  # binding.pry
+  binding.pry
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
