@@ -51,12 +51,12 @@ end
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
-def apply_coupons(cart, coupons)
-  coupons.each do |coupon|
-    item = coupon[:item]
-  binding.pry
+# def apply_coupons(cart, coupons)
+#   coupons.each do |coupon|
+#     item = coupon[:item]
+#   binding.pry
   
-end
+# end
 #   i = 0
 #   while i < coupons.count do
 #     coupon = coupons[i]
