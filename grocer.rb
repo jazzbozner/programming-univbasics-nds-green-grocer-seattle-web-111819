@@ -11,6 +11,8 @@ def find_item_by_name_in_collection(name, collection)
   end
   nil
 end
+
+
   # binding.pry
   # Implement me first!
   #
@@ -50,9 +52,10 @@ end
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 def apply_coupons(cart, coupons)
-  coupons.each do |coupons|
+  coupons.each do |coupon|
     item = coupon[:item]
   binding.pry
+  
 end
 #   i = 0
 #   while i < coupons.count do
