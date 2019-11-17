@@ -18,22 +18,39 @@ end
 
 
 def consolidate_cart(cart)
-  final_array = []
-  i = 0
+    i = 0
+  result = []
+
   while i < cart.count do
-    element_item = cart[i][:item]
-    requested_item = find_item_by_name_in_collection(element_item, final_array)
-    if requested_item 
-      requested_item[:count] += 1
+    item_name = cart[i][:item]
+    sought_item = find_item_by_name_in_collection(item_name, result)
+    if sought_item
+      sought_item[:count] += 1
     else
       cart[i][:count] = 1
-      final_array << cart[i]
-    # binding.pry
+      result << cart[i]
+    end
+    i += 1
   end
-  i += 1
+
+  result
 end
-final_array
-end
+#   final_array = []
+#   i = 0
+#   while i < cart.count do
+#     element_item = cart[i][:item]
+#     requested_item = find_item_by_name_in_collection(element_item, final_array)
+#     if requested_item 
+#       requested_item[:count] += 1
+#     else
+#       cart[i][:count] = 1
+#       final_array << cart[i]
+#     # binding.pry
+#   end
+#   i += 1
+# end
+# final_array
+# end
 
     # if final_array[element_hash]
     # else
