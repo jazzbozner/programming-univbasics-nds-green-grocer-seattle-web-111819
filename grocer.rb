@@ -53,7 +53,7 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupons|
     item = coupon[:item]
   binding.pry
-  
+end
 #   i = 0
 #   while i < coupons.count do
 #     coupon = coupons[i]
