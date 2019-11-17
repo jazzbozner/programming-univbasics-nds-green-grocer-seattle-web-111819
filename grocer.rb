@@ -4,14 +4,14 @@ def find_item_by_name_in_collection(name, collection)
   # pp collection
 
   i = 0
-  while i < collection.each do
+  while i < collection.length do
     return collection[i] if name === collection[i][:item]
     i += 1
       # binding.pry
   end
   nil
 end
-
+  # binding.pry
   # Implement me first!
   #
   # Consult README for inputs and outputs
