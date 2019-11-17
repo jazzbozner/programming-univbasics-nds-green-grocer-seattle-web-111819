@@ -52,17 +52,19 @@ end
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 def apply_coupons(cart, coupons)
-  coupons.each do |coupon|
-    item = coupon[:item]
-    if cart[:item] && coupon[:item][:count] >=coupon[:num] && !cart["#{item} W/COUPON"]
-      cart["#{item} W/COUPON"] = {price: coupon[:cost]/ coupon[:num], clearance: cart[:item[clearance], count: coupon[:num]}
-      cart[:count] -= coupon[:num]
-    elsif
-    coupon[:item][:count] >=coupon[:num] && !cart["#{item} W/COUPON"]
-      cart["#{item} W/COUPON"]
-      
-  binding.pry
-end
+  
+  
+#   coupons.each do |coupon|
+#     item = coupon[:item]
+#     if cart[:item] && coupon[:item][:count] >=coupon[:num] && !cart["#{item} W/COUPON"]
+#       cart["#{item} W/COUPON"] = {price: coupon[:cost]/ coupon[:num], clearance: cart[:item[clearance], count: coupon[:num]}
+#       cart[:count] -= coupon[:num]
+#     elsif
+#     coupon[:item][:count] >=coupon[:num] && !cart["#{item} W/COUPON"]
+#       cart["#{item} W/COUPON"]
+#       cart
+#   binding.pry
+# end
 
 #   i = 0
 #   while i < coupons.count do
