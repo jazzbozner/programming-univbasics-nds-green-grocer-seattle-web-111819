@@ -30,6 +30,9 @@ def consolidate_cart(cart)
       final_array << cart[i]
     # binding.pry
   end
+  i += 1
+end
+final_array
 end
 
     # if final_array[element_hash]
