@@ -20,6 +20,7 @@ end
 def consolidate_cart(cart)
   final_array = []
   cart.each do |element_hash|
+    if final_array ==
   binding.pry
   # Consult README for inputs and outputs
   #
