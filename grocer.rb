@@ -20,7 +20,7 @@ end
 def consolidate_cart(cart)
   final_array = []
   i = 0
-  while i < cart.length do
+  while i < cart.count do
     element_item = cart[i][:item]
     requested_item = find_item_by_name_in_collection(element_item, final_array)
     if requested_item 
