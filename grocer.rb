@@ -21,7 +21,12 @@ def consolidate_cart(cart)
   final_array = []
   cart.each do |element_hash|
     hash_index = element_hash[0]
-    if final_array ==
+    
+    
+    if final_array[element_hash]
+    else
+    
+      
   binding.pry
   # Consult README for inputs and outputs
   #
