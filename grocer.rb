@@ -20,6 +20,7 @@ end
 def consolidate_cart(cart)
   final_cart = {}
   cart.each do |element_hash|
+    element_hash += 1
   # binding.pry
   # Consult README for inputs and outputs
   #
