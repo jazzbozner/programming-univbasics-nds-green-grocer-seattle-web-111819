@@ -18,7 +18,7 @@ end
 
 
 def consolidate_cart(cart)
-  final_hash = {}
+  final_array = []
   cart.each do |element_hash|
   binding.pry
   # Consult README for inputs and outputs
