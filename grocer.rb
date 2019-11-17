@@ -24,8 +24,8 @@ def consolidate_cart(cart)
     element_price = element_has[:price]
      binding.pry
     
-    if final_array[element_hash]
-    else
+    # if final_array[element_hash]
+    # else
     
       
  
